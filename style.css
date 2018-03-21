@@ -53,6 +53,8 @@ header .bottom  img {
 	overflow: hidden;
 	z-index: -100;
 	position: relative;
+	background: url(images/bg3.jpg) no-repeat;
+    background-size: cover
 	}
 					
 .fullscreen-bg_video {
@@ -378,134 +380,125 @@ header .bottom  img {
 /*///////////////////
 //// 10 - False ////
 /////////////////*/
-	.work-top p,.comments-head p{
-		color:#BBB6B6;
-		width:36%;
-		margin:0 auto;
-		font-weight:300;
-		padding-top: 1em;
+.work-top p,.comments-head p{
+	color:#BBB6B6;
+	width:36%;
+	margin:0 auto;
+	font-weight:300;
+	padding-top: 1em;
 	}
-	.comments-head{
-		text-align:center;
+.comments-head{
+	text-align:center;
 	}
-	.comments {
-		background: rgb(255, 255, 255);
-		padding: 4em 0px 2em 0px;
+.comments {
+	background: rgb(255, 255, 255);
+	padding: 4em 0px 2em 0px;
 	}
-	.comments-head h3{
-		font-size:1.8em;
-		color:#464646;
-		font-weight:700;
-		margin:0px;
-		padding-bottom:15px;
+.comments-head h3{
+	font-size:1.8em;
+	color:#464646;
+	font-weight:700;
+	margin:0px;
+	padding-bottom:15px;
 	}
-	.comments-left{
-		width:16%;
-		float:left;
+.comments-left{
+	width:16%;
+	float:left;
 	}
-	.comments-right{
-		width:83%;
-		float:right;
+.comments-right{
+	width:83%;
+	float:right;
 	}
-	.comments-right h3{
-		font-size:1.2em;
-		color:#484848;
-		font-weight:700;
-		margin: 0px;
-		padding-bottom: 10px;
+.comments-right h3{
+	font-size:1.2em;
+	color:#484848;
+	font-weight:700;
+	margin: 0px;
+	padding-bottom: 10px;
 	}
-	.comments-right p{
-		color:rgb(190, 190, 190);
-		font-weight:300;
-		width:87%;
-		}
-	.comments-right p.para1{
-		font-size:25px;
+.comments-right p{
+	color:rgb(179, 179, 179);
+	font-weight:300;
+	width:87%;
 	}
-	.comments-right p.para2{
-		font-size:16px;
-		line-height:1.8em;
-		padding-top:1em;
+.comments-right p.para1{
+	font-size:25px;
 	}
-	.comments-left span{
-		background:url(../images/quots.png) no-repeat;
-		width:38px;
-		height:38px;
-		display:block;
-		cursor: pointer;
+.comments-right p.para2{
+	font-size:16px;
+	line-height:1.8em;
+	padding-top:1em;
 	}
-	.comments-bottom {
-		padding: 2em 0px;
+.comments-bottom {
+	padding: 2em 0px;
 	}
-	.comments {
-		padding: 4em 0px 2em 0px;
+.comments {
+	padding: 4em 0px 2em 0px;
 	}
-	.work-top p, .comments-head p {
-		width: 55%;
-		padding-top: 10px
+.work-top p, .comments-head p {
+	width: 55%;
+	padding-top: 10px
 	}
-	.comments-left {
-		float: none;
-		margin: 0 auto;
-		width: 5%;
+.comments-left {
+	float: none;
+	margin: 0 auto;
+	width: 5%;
 	}
-	.comments-right h3 {
-		padding: 10px 0px 10px 0px;
+.comments-right h3 {
+	padding: 10px 0px 10px 0px;
 	}
-	.comments-right {
-		width: 100%;
-		float: none;
+.comments-right {
+	width: 100%;
+	float: none;
 	}
-	.gallery-top-img {
-		width: 50%;
+.comments-bottom {
+	padding: 0.6em 0px;
+	text-align: center;
 	}
-	.gallery-top-img span {
-		margin-left: 7px;
+.comments-right p {
+	width: 100%;
 	}
-	.comments-bottom {
-		padding: 0.6em 0px;
-		text-align: center;
+.comments-right p.para2 {
+	padding-top: 10px;
 	}
-	.comments-right p {
-		width: 100%;
+.work-top p, .comments-head p {
+	width: 100%;
 	}
-	.comments-right p.para2 {
-		padding-top: 10px;
+.comments-head h3 {
+	padding-bottom: 5px;
 	}
-	.work-top p, .comments-head p {
-		width: 100%;
+.comments-head h3 {
+	font-size: 1.6em;
 	}
-	.comments-head h3 {
-		padding-bottom: 5px;
+.comments {
+	padding: 2em 0px 1.5em 0px;
 	}
-	.comments-head h3 {
-		font-size: 1.6em;
+.work-top p, .comments-head p {
+	font-size: 15px;
 	}
-	.comments {
-		padding: 2em 0px 1.5em 0px;
+.comments-head h3 {
+	font-size: 1.2em;
+	padding-bottom: 0px;
 	}
-	.work-top p, .comments-head p {
-		font-size: 15px;
+.work-top p, .comments-head p {
+	padding-top: 0px;
 	}
-	.comments-head h3 {
-		font-size: 1.2em;
-		padding-bottom: 0px;
+.comments-left span {
+	background-size: 85%;
 	}
-	.work-top p, .comments-head p {
-		padding-top: 0px;
+.comments-left {
+	width: 13%;
 	}
-	.comments-left span {
-		background-size: 85%;
+.comments-right p.para2 {
+	padding-top: 5px;
+	font-size:26px;
 	}
-	.comments-left {
-		width: 13%;
-	}
-	.comments-right p.para2 {
-		padding-top: 5px;
-		font-size:26px;
-	}
-	.comments-bottom {
-		padding: 0.3em 0px;
+.comments-bottom {
+	padding: 0.3em 0px;
 	}
 	
-	
+.layer {
+	overflow-x: scroll;
+	padding: 5px;
+	white-space: nowrap;
+	} 
