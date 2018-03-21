@@ -54,7 +54,9 @@ header .bottom  img {
 	z-index: -100;
 	position: relative;
 	background: url(images/bg3.jpg) no-repeat;
-    background-size: cover
+	background-size: cover;
+	width: 100%;
+	height: 100%;
 	}
 					
 .fullscreen-bg_video {
