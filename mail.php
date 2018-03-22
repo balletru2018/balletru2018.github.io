@@ -1,3 +1,6 @@
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: *");
+
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
