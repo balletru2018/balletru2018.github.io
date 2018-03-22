@@ -503,3 +503,14 @@ header .bottom  img {
 	padding: 5px;
 	white-space: nowrap;
 	} 
+
+A:link { 
+	text-decoration: none; 
+	color: rgb(179, 179, 179);
+	} 
+A:visited { text-decoration: none; color: rgb(179, 179, 179);} 
+A:active { text-decoration: none; color: rgb(179, 179, 179);}
+ A:hover {
+	text-decoration: underline; 
+	color: rgb(143, 143, 143); 
+	   } 
