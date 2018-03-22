@@ -22,7 +22,7 @@ $email = trim($email);
 $subject = trim($subject);
 $message = trim($message);
 
-if (mail("balletru.2018@gmail.com", "Сообщение с сайта", "Имя:".$fio.". Электронный адрес: ".$email". Тема: ".$subject". Сообщение: ".$message ,"From: balletru.2018@gmail.com \r\n"))
+if (mail("balletru.2018@gmail.com", "Сообщение с сайта", "Имя:".$name.". Электронный адрес: ".$email". Тема: ".$subject". Сообщение: ".$message ,"From: balletru.2018@gmail.com \r\n"))
  {     echo "Сообщение отправлено"; 
 } else { 
     echo "При отправке сообщения возникла ошибка";
