@@ -1,6 +1,23 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
 
+server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        root   html;
+        index  mail.html mail.htm;
+    }
+
+    error_page  404     /404.html;
+    error_page  403     /403.html;
+
+    error_page  405     =200 $uri;
+
+    # ...
+}
+
 <?php
 $name = $_POST['name'];
 $email = $_POST['email'];
