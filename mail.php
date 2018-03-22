@@ -1,21 +1,15 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: *");
 
-server {
-    listen       80;
-    server_name  localhost;
+error_page 405 =200 @405;
 
-    location / {
-        root   html;
-        index  mail.html mail.htm;
-    }
+location @405 {
+    include fastcgi.conf;
+}
 
-    error_page  404     /404.html;
-    error_page  403     /403.html;
-
-    error_page  405     =200 $uri;
-
-    # ...
+location ~ \.php(.*) {
+    fastcgi_split_path_info ^(.+\.php)(.*)$;
+    include fastcgi.conf;
 }
 
 <?php
