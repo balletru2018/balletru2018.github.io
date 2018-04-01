@@ -5,10 +5,20 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css" media="screen"/>
         <link rel="stylesheet" href="media.css" media="screen"/>
-        <link rel="stylesheet" href="main.css" media="screen"/>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
+  <script type="text/javascript">
+  $(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+        $svg_anm   = $preloader.find('.svg_anm');
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});
+</script>
     </head>
+    <!-- Preloader -->
+<div id="p_prldr"><p class="anm"><img src="images/preloader.gif" draggable="false"></p></div>
     <body>
 		<a name="home"></a>
 		<!-- Header -->
@@ -38,10 +48,10 @@
             <ul class="main-nav">
 				<li><a href="#history"><img src="images/history.png"></a></li>
 				<li><a href="#people"><img src="images/people.png"></a></li>
-				<li><a href="#theaters"><img src="images/theaters.png"></a></li>
-				<li class="small-logo"><a href="#home"><img src="images/home.png" alt=""></a></li>
-				<li><a href="#interesting"><img src="images/interesting.png"></a></li>
 				<li><a href="#myths"><img src="images/myths.png"></a></li>
+				<li class="small-logo"><a href="#home"><img src="images/home.png"></a></li>
+				<li><a href="#studio"><img src="images/studio.png"></a></li>
+				<li><a href="#gallery"><img src="images/gallery.png"></a></li>
                 <li><a href="#contacts"><img src="images/contacts.png"></a></li>
             </ul>
 	</nav>
@@ -142,63 +152,17 @@
         </div>
     </div>
     </section>
-	<a name="theaters"></a>
-    <!-- Wrapper One -->
-    <div class="wrapper style1">
-        <section id="features" class="container special">
-            <header>
-					<img src="images/theater.png"><br>
-            </header>
-            <div class="row">
-                <article class="4u 12u(mobile) special">
-                    <a href="#" class="image featured"><img src="images/bigtheater.jpg" width="100%" /></a>
-                    <header>
-                        <h3>Большой театр</h3>
-                    </header>
-                    <p>один из крупнейших в России и один из самых значительных в мире театров оперы и балета. Комплекс зданий театра расположен в центре Москвы, на Театральной площади</p>
-                    </article>
-                <article class="4u 12u(mobile) special">
-                    <a href="#" class="image featured"><img src="images/mariintheater.jpg" width="100%" /></a>
-                    <header>
-                        <h3>Театр балета Леонида Якобсона</h3>
-                    </header>
-                    <p>первый в СССР балетный театр, учреждённый отдельно от оперной труппы. Основан в 1966 году танцовщиком и балетмейстером Петром Гусевым как «Камерный балет»</p>
-                    </article>
-                <article class="4u 12u(mobile) special">
-                    <a href="#" class="image featured"><img src="images/mihaylovskiy.jpg" width="100%" /></a>
-                    <header>
-                        <h3>Михайловский театр</h3>
-                    </header>
-                    <p>театр оперы и балета в Санкт-Петербурге, один из значимых музыкальных театров России. Открыт в 1833 году.</p>
-                    </article>
-                </div>
-            </section>
-		</div>
-		<a name="interesting"></a>
-        <!-- Wrapper Two -->
-        <div class="wrapper style2">
-            <article id="main" class="container special">
-                <a href="#" class="image featured"><img src="images/int.jpg" width="100%" /></a>
-                <header>
-					<br>
-						<img src="images/interesting2.png">
-                    <p>Что скрывается за лентами пуант?</p>
-                </header>
-                <p>Есть некоторые профессии, о которых широкому обывателю известно мало. Одной из них является балет. Балет с давних пор не перестает восхищать людей по всему миру. А балерины кажутся подобными воздушным феям, для которых не существует законов земного притяжения. На самом деле, подобная легкость объясняется годами упорного труда, и профессиональные заболевания являются обычным явлением в сфере балета. Ноги балерины – самое уязвимое место. Они необычайно крепкие, сильные и выносливые, а также не такие, какими мы их привыкли считать - в синяках и кровоподтеках. В большинстве случаев они ничем не отличаются от ног людей, которые ни разу не занимались танцами. Поэтому, состояние ног балерины зависит от любви к своей профессии и к самой себе.</p>
-                </article>
-			</div>
-			<a name="myths"></a>
+    <a name="myths"></a>
             <!-- False -->
             <div class="comments" id="contact">
                 <div class="container">
                     <div class="comments-main">
                         <div class="comments-head">
-								<img src="images/myths2.png">
+                            <img src="images/myths2.png">
                         </div>
                         <div class="comments-top">
                             <div class="col-md-4 comments-bottom">
                                 <div class="comments-left">
-                                    <span></span>
                                 </div>
                                 <div class="comments-right">
                                     <h3>Миф №1</h3>
@@ -267,22 +231,98 @@
                         </div>
                     </div>
                 </div>
-			</div>
-			<a name="contacts"></a>
+            </div><br>
+    <a name="studio"></a>
+    <!-- Studio -->
+               <div class="wrapper style1">
+                    <section id="features" class="container special">
+                        <header>
+                                <img src="images/studio2.png">
+                        </header><br>
+                        <div class="row">
+                            <article class="4u 12u(mobile) special">
+                                <a href="#" class="image featured"><img src="images/1.jpg" width="100%" /></a>
+                                <header>
+                                    <h3>Дружный коллектив</h3>
+                                </header>
+                                <p>Воспитанницы коллектива не враждуют между собой, регулярно посещают занятия и полностью выкладывают свои силы. Каждая прошедшая тренировка оставляет за собой приятную усталость, которая вдохновляет стараться все больше и больше с каждым разом.</p>
+                                </article>
+                            <article class="4u 12u(mobile) special">
+                                <a href="#" class="image featured"><img src="images/2.jpg" width="100%" /></a>
+                                <header>
+                                    <h3>Отзывчивые преподаватели</h3>
+                                </header>
+                                <p>Коллектив классического танца «Фиеста» основан в 2013 г. Руководитель коллектива - Фролова Наталья. Хореограф-постановщик - Фролова Екатерина, выпускница Санкт-Петербургского института культуры и искусства.</p>
+                                </article>
+                            <article class="4u 12u(mobile) special">
+                                <a href="#" class="image featured"><img src="images/3.jpg" width="100%" /></a>
+                                <header>
+                                    <h3>Высокий уровень</h3>
+                                </header>
+                                <p>Воспитанницы принимают участие в мастер-классах у педагогов: заслуженной артистки Румянцевой Ирины Ивановны, солиста балета Мариинского театра, лауреата премии "Золотая Маска", Иванова Андрея Валентиновича, артистки балета Астраханского театра Самойловой Александры.</p>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+                <a name="gallery"></a>
+                <!-- Gallery -->
+                <div class="wrapper style2">
+                        <article id="main" class="container special">
+                                <div class="wrapperr">
+                                        <input type="radio" name="point" id="slide1" checked>
+                                        <input type="radio" name="point" id="slide2">
+                                        <input type="radio" name="point" id="slide3">
+                                        <input type="radio" name="point" id="slide4">
+                                        <input type="radio" name="point" id="slide5">
+                                        <div class="slider">
+                                            <div class="slides slide1"></div>
+                                            <div class="slides slide2"></div>
+                                            <div class="slides slide3"></div>
+                                            <div class="slides slide4"></div>
+                                            <div class="slides slide5"></div>
+                                        </div>	
+                                        <div class="controls">
+                                            <label for="slide1"></label>
+                                            <label for="slide2"></label>
+                                            <label for="slide3"></label>
+                                            <label for="slide4"></label>
+                                            <label for="slide5"></label>
+                                        </div>
+                                    </div>
+                            <header>
+                                <br>
+                                    <img src="http://x-lines.ru/letters/i/cyrillicscript/0492/000000/56/0/4nj7bcgozxemmwcy4n47dda.png">
+                                <p><b>Наши достижения</b></p>
+                            </header>
+                            <p>Коллектив постоянный участник городских и областных мероприятий, в числе которых «Праздник танца», «Солнечный эльф», областных конкурсов юных чтецов имени Константина Бальмонта, регионального фестиваля молодежных театров моды «Мир молодых», День города и др. Обладатель Гран-При Чемпионата и Первенства Ивановской области по современным танцевальным направлениям "Ситцевый бал", Кубка Всемирной танцевальной Олимпиады. <br>Лауреаты областных, региональных, международных конкурсов: «Танцетворение», «Соловушкино раздолье», "Ситцевый бал", "Проспект-NN", «Планета танца», «Жар-птица», «Магия танца», «Шире круг» и многих других.
+                                    <br>Концерты проходят с большим успехом и на высоком профессиональном уровне.
+                                    </p>
+                            </article>
+                        </div>
+            <a name="contacts"></a>
+            <section id="banner">
+                    <header>
+                        <img src="images/contact2.png">
+                        <p>Телефон: 8 (920) 123-45-67 | E-mail: info@gmail.com | Адрес: Ивановская обл., г. Шуя, 155900, Фабричная ул., 2</p>
+                    </header>
+                </section>
+            <iframe class="google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1456.5505940955538!2d41.351950652695564!3d56.83976724452847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414d0a2509524609%3A0xee59ae6dd9088e48!2z0KHRg9C60L7QvdC90LDRjyDRhNCw0LHRgNC40LrQsA!5e0!3m2!1sru!2sru!4v1522505185446" width="100%" height="350px" frameborder="0" style="border:0" allowfullscreen></iframe>
 			<!-- Footer -->
 			<section class="copyright">
-				<h2></h2>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="copy_right_text">
 								<p>&copy; 2018. Год российского балета <a href="https://e.mail.ru/compose/" onclick="window.open(this.href, '', 'scrollbars=1'); return false;">balletru.2018@gmail.com</a></p>        
-								<p>Ольга Бекетова</a></p>
+                                <p>Ольга Бекетова</p>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div><!-- uSocial -->
+            <script async src="https://usocial.pro/usocial/usocial.js?v=6.1.4" data-script="usocial" charset="utf-8"></script>
+            <div class="uSocial-Share" data-pid="7056620a6ac28e5d2d18f46382a7126c" data-type="share" data-options="round,style3,default,absolute,horizontal,size48,counter0,nomobile" data-social="vk,ok,gPlus,twi,tumblr" align="center"></div>
+            <!-- /uSocial -->
 		</section>
 		<!-- Script -->
 		<script type="text/javascript">
@@ -295,6 +335,6 @@
 					  else $('#stick_menu').removeClass('to_top');
 					 });
 					});
-					</script>
+                    </script>
 					</body>
 					</html>
