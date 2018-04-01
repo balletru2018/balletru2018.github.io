@@ -536,7 +536,7 @@ header .bottom  img {
 	background-size: cover
 }
 .slide:nth-of-type(2){
-    background-image: url(images/2slide.jpg);
+    background-image: url(images/2slide.JPG);
 	background-size: cover
 }
 .slide:nth-of-type(3){
@@ -548,7 +548,7 @@ header .bottom  img {
 	background-size: cover
 }
 .slide:nth-of-type(5){
-    background-image: url(images/5slide.jpg);
+    background-image: url(images/5slide.JPG);
 	background-size: cover
 }
 
