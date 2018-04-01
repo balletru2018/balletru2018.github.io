@@ -528,13 +528,13 @@ header .bottom  img {
 	
 	.slide1 { background-image: url(images/1slide.jpg); background-size: cover;
 		width: 100%;}
-	.slide2 { background-image: url(images/2slide.jpg); background-size: cover;
+	.slide2 { background-image: url(images/2slide.JPG); background-size: cover;
 		width: 100%;}
 	.slide3 { background-image: url(images/3slide.jpg); background-size: cover;
 		width: 100%;}
 	.slide4 { background-image: url(images/4slide.png); background-size: cover;
 		width: 100%;}
-	.slide5 { background-image: url(images/5slide.jpg); background-size: cover;
+	.slide5 { background-image: url(images/5slide.JPG); background-size: cover;
 		width: 100%;}
 
 	.wrapperr .controls {
