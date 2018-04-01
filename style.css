@@ -375,7 +375,7 @@ header .bottom  img {
 	color:#BBB6B6;
 	width:36%;
 	margin:0 auto;
-	font-weight:300;
+	font-weight:400;
 	padding-top: 1em;
 	}
 .comments-head{
@@ -386,7 +386,7 @@ header .bottom  img {
 	padding: 4em 0px 2em 0px;
 	}
 .comments-head h3{
-	font-size:1.8em;
+	font-size:1.1em;
 	color:#464646;
 	font-weight:700;
 	margin:0px;
@@ -401,7 +401,7 @@ header .bottom  img {
 	float:right;
 	}
 .comments-right h3{
-	font-size:1.2em;
+	font-size:1.1em;
 	color:#484848;
 	font-weight:700;
 	margin: 0px;
@@ -413,10 +413,10 @@ header .bottom  img {
 	width:87%;
 	}
 .comments-right p.para1{
-	font-size:25px;
+	font-size:22px;
 	}
 .comments-right p.para2{
-	font-size:16px;
+	font-size:22px;
 	line-height:1.8em;
 	padding-top:1em;
 	}
@@ -459,16 +459,16 @@ header .bottom  img {
 	padding-bottom: 5px;
 	}
 .comments-head h3 {
-	font-size: 1.6em;
+	font-size: 1.1em;
 	}
 .comments {
 	padding: 2em 0px 1.5em 0px;
 	}
 .work-top p, .comments-head p {
-	font-size: 15px;
+	font-size: 22px;
 	}
 .comments-head h3 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	padding-bottom: 0px;
 	}
 .work-top p, .comments-head p {
@@ -482,7 +482,7 @@ header .bottom  img {
 	}
 .comments-right p.para2 {
 	padding-top: 5px;
-	font-size:26px;
+	font-size:22px;
 	}
 .comments-bottom {
 	padding: 0.3em 0px;
@@ -551,7 +551,10 @@ header .bottom  img {
     background-image: url(images/5slide.png);
 	background-size: cover
 }
-
+.slide:nth-of-type(6){
+    background-image: url(images/6slide.png);
+	background-size: cover
+}
 /*///////////////////
 /// 10 - Footer ////
 /////////////////*/
